@@ -9,8 +9,10 @@
 
 #### Basic Structure
 
+```
 /
-    | - source / 
-    | - common-lib /
-    | - test / 
-    | CMakeLists.txt
+  | - source / 
+  | - common-lib /
+  | - test / 
+  | CMakeLists.txt
+```
