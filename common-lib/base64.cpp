@@ -23,6 +23,7 @@ std::string base64_encode(const std::vector<unsigned char>& data) {
 
     return result;
 }
+
 std::array<unsigned char, 128> create_base64_decode_table() {
     std::array<unsigned char, 128> table{};
     for (size_t i = 0; i < sizeof(base64_chars) - 1; i++) {
@@ -30,6 +31,7 @@ std::array<unsigned char, 128> create_base64_decode_table() {
     }
     return table;
 }
+
 std::vector<unsigned char> base64_decode(const std::string& input) {
     static const auto decode_table = create_base64_decode_table();
     std::vector<unsigned char> result;
