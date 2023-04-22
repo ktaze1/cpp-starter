@@ -10,9 +10,24 @@
 #### Basic Structure
 
 ```
-/
-  | - source / 
-  | - common-lib /
-  | - test / 
-  | CMakeLists.txt
+Project Root Folder:/
+├── CMakeLists.txt
+├── common-lib/
+│   └── CMakeLists.txt
+├── LICENSE
+├── README.md
+├── src/
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   ├── project.cpp
+│   └── project.h
+└── test/
+    ├── CMakeLists.txt
+    ├── fuzz/
+    │   ├── common-lib/
+    │   └── src/
+    ├── test_runner.cpp
+    └── unit/
+        ├── common-lib/
+        └── src/
 ```
